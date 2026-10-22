@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090b18">
+<title>Shaheen Edits | Video Editing</title>
+<style>
+:root{--bg:#090b18;--panel:#12162a;--text:#f5f7ff;--muted:#aab1cb;--pink:#ff4ecd;--cyan:#53e7ff;--purple:#8b5cf6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#25204c 0,transparent 36%),radial-gradient(ellipse at 100% 28%,#12344a 0,transparent 30%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}.brand{font-weight:900;letter-spacing:.5px;font-size:1.1rem}.brand span{color:var(--pink)}.navlink{color:var(--muted);font-size:.92rem}
+.hero{min-height:76vh;display:grid;align-items:center;grid-template-columns:1.2fr .8fr;gap:40px;padding:56px 0 70px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid #ffffff25;background:#ffffff08;padding:8px 13px;border-radius:999px;color:#dce5ff;font-size:.82rem}
+.dot{width:8px;height:8px;border-radius:50%;background:#65f4a8;box-shadow:0 0 14px #65f4a8}
+h1{font-size:clamp(3rem,8vw,6.4rem);line-height:.95;letter-spacing:-.07em;margin:24px 0}h1 .gradient{background:linear-gradient(100deg,var(--pink),#b68cff 48%,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:570px;color:var(--muted);font-size:1.08rem}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 20px;border-radius:14px;font-weight:800;transition:.2s;cursor:pointer;border:1px solid #ffffff20}
+.btn:hover{transform:translateY(-3px)}.primary{background:linear-gradient(110deg,var(--pink),var(--purple));box-shadow:0 10px 35px #a23cff35}.secondary{background:#ffffff08}
+.art{position:relative;min-height:390px;display:grid;place-items:center}.orb{width:min(350px,75vw);aspect-ratio:1;border-radius:34% 66% 59% 41% / 38% 38% 62% 62%;background:linear-gradient(135deg,#ff4ecd,#8b5cf6 48%,#36dfff);filter:saturate(1.1);box-shadow:0 0 90px #8b5cf655;transform:rotate(-8deg)}
+.floating{position:absolute;background:#10152bdf;border:1px solid #ffffff28;backdrop-filter:blur(14px);border-radius:18px;padding:15px 18px;box-shadow:0 15px 45px #0005}.floating strong{display:block;font-size:1.05rem}.floating small{color:var(--muted)}.f1{top:48px;right:0}.f2{bottom:45px;left:0}.play{position:absolute;width:88px;height:88px;border-radius:50%;display:grid;place-items:center;background:#0c1024bd;border:1px solid #ffffff6b;font-size:2rem;box-shadow:0 0 0 14px #ffffff12}
+section{padding:62px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}h2{font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.05;letter-spacing:-.04em;margin:0 0 10px}.sub{color:var(--muted);margin:0}.card{background:linear-gradient(145deg,#ffffff0d,#ffffff04);border:1px solid #ffffff18;border-radius:24px;padding:22px;box-shadow:0 20px 60px #0002}
+.video-frame{aspect-ratio:16/9;width:100%;background:linear-gradient(135deg,#171b35,#21143a 55%,#102a3b);border-radius:17px;overflow:hidden;display:grid;place-items:center;position:relative;border:1px solid #ffffff1c}
+.video-frame video{width:100%;height:100%;object-fit:contain;background:#05060c}.video-placeholder{text-align:center;padding:24px}.video-placeholder .play-icon{font-size:3rem;color:var(--cyan)}.video-placeholder p{color:var(--muted);max-width:450px;margin:8px auto}
+.video-caption{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-top:18px;flex-wrap:wrap}.pill{font-size:.78rem;border:1px solid #ffffff20;border-radius:999px;padding:6px 10px;color:#d7dcf3}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service-icon{font-size:1.6rem;margin-bottom:14px}.service h3{margin:0 0 6px}.service p{color:var(--muted);margin:0;font-size:.94rem}
+.cta{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:clamp(24px,5vw,48px);border-radius:28px;background:linear-gradient(115deg,#ff4ecd20,#8b5cf630,#53e7ff18);border:1px solid #ffffff22}
+.cta p{color:var(--muted);max-width:580px;margin-bottom:0}footer{padding:30px 0 38px;color:var(--muted);font-size:.86rem;border-top:1px solid #ffffff12;margin-top:65px}.footerrow{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:35px;gap:5px}.art{min-height:300px}.orb{width:250px}.f1{right:3%}.f2{left:2%;bottom:25px}.services{grid-template-columns:1fr}.section-head{display:block}.section-head .sub{margin-top:10px}.cta{align-items:flex-start;flex-direction:column}nav{padding:18px 0}}
+
+.contact-card{max-width:720px;margin:auto}
+.contact-card form{display:grid;gap:9px}
+.contact-card label{font-weight:750;margin-top:8px}
+.contact-card input,.contact-card textarea{width:100%;font:inherit;color:var(--text);background:#080b19;border:1px solid #ffffff28;border-radius:12px;padding:13px 14px;outline:none}
+.contact-card input:focus,.contact-card textarea:focus{border-color:var(--cyan);box-shadow:0 0 0 3px #53e7ff20}
+.contact-card textarea{resize:vertical}
+
+</style>
+</head>
+<body>
+<header class="wrap">
+  <nav><a class="brand" href="#">SHAHEEN<span>.</span>EDITS</a><a class="navlink" href="#work">My edits ↘</a></nav>
+</header>
+<main>
+  <section class="wrap hero">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> Small creator. Big creativity.</div>
+      <h1>YOUR VISION.<br><span class="gradient">MY EDITS.</span></h1>
+      <p class="lead">Welcome to Shaheen Edits — cinematic vibes, smooth transitions and edits made with passion. Have a video idea? Let’s make it look amazing.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://www.instagram.com/sha4heen_/" target="_blank" rel="noopener">✦ Message me on Instagram ↗</a>
+        <a class="btn secondary" href="#work">▶ Watch my edit</a>
+      </div>
+    </div>
+    <div class="art" aria-label="Abstract neon editing artwork">
+      <div class="orb"></div><div class="play">▶</div>
+      <div class="floating f1"><strong>✦ CREATIVE MODE</strong><small>Every frame matters</small></div>
+      <div class="floating f2"><strong>SHAHEEN EDITS</strong><small>Made with passion ♡</small></div>
+    </div>
+  </section>
+  <section class="wrap" id="work">
+    <div class="section-head"><div><h2>Featured edit<span style="color:var(--pink)">.</span></h2><p class="sub">A little preview of my editing style.</p></div><span class="pill">MY VIDEO SHOWCASE</span></div>
+    <div class="card">
+      <div class="video-frame" id="videoFrame">
+        <div class="video-placeholder" id="placeholder"><div class="play-icon">▷</div><strong>Loading your edit…</strong><p>Your video is included below.</p></div>
+        <video id="myVideo" controls playsinline preload="metadata" style="display:none"><source src="my-edit.mp4" type="video/mp4">Your browser does not support video playback.</video>
+      </div>
+      <div class="video-caption"><div><strong>Latest creation</strong><div class="sub">Edited by Shaheen</div></div><span class="pill">🎬 SHORT-FORM EDIT</span></div>
+    </div>
+  </section>
+  <section class="wrap">
+    <div class="section-head"><div><h2>What I can edit<span style="color:var(--cyan)">.</span></h2><p class="sub">Tell me your idea and we’ll create something cool.</p></div></div>
+    <div class="services">
+      <div class="card service"><div class="service-icon">🎞️</div><h3>Reels & Shorts</h3><p>Fast-paced edits, beat sync, transitions and social-ready videos.</p></div>
+      <div class="card service"><div class="service-icon">⚡</div><h3>Velocity & Effects</h3><p>Dynamic motion, speed ramps and effects to give your clips energy.</p></div>
+      <div class="card service"><div class="service-icon">🌌</div><h3>Cinematic Vibes</h3><p>Color, mood and clean cuts for a polished cinematic feel.</p></div>
+    </div>
+  </section>
+
+  <section class="wrap" id="contact">
+    <div class="section-head"><div><h2>Contact <span style="color:var(--pink)">me.</span></h2><p class="sub">Fill in your details and copy them to share easily.</p></div></div>
+    <div class="card contact-card">
+      <form id="contactForm">
+        <label for="contactName">Name:</label>
+        <input id="contactName" name="name" type="text" placeholder="Enter your name" autocomplete="name" required>
+        <label for="contactPhone">Phone:</label>
+        <input id="contactPhone" name="phone" type="tel" placeholder="Enter your phone number" autocomplete="tel" required>
+        <label for="contactSkills">What can do:</label>
+        <textarea id="contactSkills" name="skills" rows="3" placeholder="Example: Video editing, Reels, Shorts..." required></textarea>
+        <div class="actions">
+          <button class="btn primary" type="button" id="copyContact">📋 Copy details</button>
+          <button class="btn secondary" type="button" id="shareContact">↗ Share details</button>
+        </div>
+        <p class="sub" id="copyStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+  <section class="wrap">
+    <div class="cta"><div><h2>Got a video to edit?</h2><p>Send me a message on Instagram with your idea, clips and the style you want. Let’s create something awesome!</p></div><a class="btn primary" href="https://www.instagram.com/sha4heen_/" target="_blank" rel="noopener">DM @sha4heen_ ↗</a></div>
+  </section>
+</main>
+<footer class="wrap"><div class="footerrow"><span>© <span id="year"></span> Shaheen Edits</span><span>Made with creativity ✦ <a href="https://www.instagram.com/sha4heen_/" target="_blank" rel="noopener">@sha4heen_</a></span></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const video = document.getElementById('myVideo');
+video.addEventListener('error', () => { video.style.display='none'; document.getElementById('placeholder').style.display='block'; });
+video.addEventListener('loadedmetadata', () => { video.style.display='block'; document.getElementById('placeholder').style.display='none'; });
+
+const contactForm = document.getElementById('contactForm');
+const copyStatus = document.getElementById('copyStatus');
+function getContactDetails() {
+  return `Name: ${document.getElementById('contactName').value.trim()}\nPhone: ${document.getElementById('contactPhone').value.trim()}\nWhat can do: ${document.getElementById('contactSkills').value.trim()}`;
+}
+document.getElementById('copyContact').addEventListener('click', async () => {
+  if (!contactForm.reportValidity()) return;
+  const details = getContactDetails();
+  try {
+    await navigator.clipboard.writeText(details);
+    copyStatus.textContent = 'Copied! You can now paste and share your details.';
+  } catch (err) {
+    const box = document.createElement('textarea');
+    box.value = details;
+    box.style.position = 'fixed'; box.style.opacity = '0';
+    document.body.appendChild(box); box.select();
+    const ok = document.execCommand('copy'); box.remove();
+    copyStatus.textContent = ok ? 'Copied! You can now paste and share your details.' : 'Copy failed. Please select and copy your details manually.';
+  }
+});
+document.getElementById('shareContact').addEventListener('click', async () => {
+  if (!contactForm.reportValidity()) return;
+  const details = getContactDetails();
+  if (navigator.share) {
+    try { await navigator.share({ title: 'My Contact Details', text: details }); }
+    catch (err) { if (err.name !== 'AbortError') copyStatus.textContent = 'Sharing was not completed. Try Copy details.'; }
+  } else {
+    try {
+      await navigator.clipboard.writeText(details);
+      copyStatus.textContent = 'Sharing is not supported here, so your details were copied. Paste them into a message.';
+    } catch (err) { copyStatus.textContent = 'Sharing is not supported in this browser. Please use Copy details.'; }
+  }
+});
+
+</script>
+</body>
+</html>
